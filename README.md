@@ -15,72 +15,50 @@ The data for this project is quite large - in fact, it is so large you cannot up
 
 Below is the history of training process with vgg13. I stopped training after 15 epochs and testing accuracy was around 88%.
 
-$ python train.py flowers/ --save checkpoint.pth --arch vgg13 --learning_rate 0.05 --hidden_units 1024 --epochs 15 --gpu
-
-traing using cuda
+$ python train.py flowers/ --save checkpoint.pth --epochs 10 --gpu
 
 curently 1th epoch
-  training   : loss = 2.3467164039611816, accuracy = 0.4413109756097561
-  validation : loss = 0.9845077395439148, accuracy = 0.7234241458085867
+  training   : loss = 2.4684901237487793, accuracy = 0.41783536585365855
+  validation : loss = 1.035745620727539, accuracy = 0.6797542732495528
 
 curently 2th epoch
-  training   : loss = 1.0547101497650146, accuracy = 0.7192073170731708
-  validation : loss = 0.5220341682434082, accuracy = 0.86017628128712
+  training   : loss = 1.1039330959320068, accuracy = 0.7030487804878048
+  validation : loss = 0.5928100943565369, accuracy = 0.8249198725590339
 
 curently 3th epoch
-  training   : loss = 0.7953851222991943, accuracy = 0.7783028454315372
-  validation : loss = 0.45335015654563904, accuracy = 0.8721955120563507
+  training   : loss = 0.8355001211166382, accuracy = 0.7673780487804878
+  validation : loss = 0.5692702531814575, accuracy = 0.8389423076923077
 
 curently 4th epoch
-  training   : loss = 0.6430792808532715, accuracy = 0.8153963414634147
-  validation : loss = 0.39407235383987427, accuracy = 0.89142628128712
+  training   : loss = 0.7327343225479126, accuracy = 0.7981707317073171
+  validation : loss = 0.4215972423553467, accuracy = 0.8740651699212881
 
 curently 5th epoch
-  training   : loss = 0.5708428621292114, accuracy = 0.8391260161632444
-  validation : loss = 0.5864042043685913, accuracy = 0.8514957267504472
+  training   : loss = 0.6132146716117859, accuracy = 0.8287601625047079
+  validation : loss = 0.3322969377040863, accuracy = 0.9122596153846154
 
 curently 6th epoch
-  training   : loss = 0.4953936040401459, accuracy = 0.8584349594465116
-  validation : loss = 0.38784322142601013, accuracy = 0.8986378197486584
+  training   : loss = 0.5563485026359558, accuracy = 0.8423780487804878
+  validation : loss = 0.53471440076828, accuracy = 0.8695245729042933
 
 curently 7th epoch
-  training   : loss = 0.47287535667419434, accuracy = 0.8679369917730005
-  validation : loss = 0.3692706227302551, accuracy = 0.9034455120563507
+  training   : loss = 0.5453370809555054, accuracy = 0.8484756097560976
+  validation : loss = 0.452088326215744, accuracy = 0.8846153846153846
 
 curently 8th epoch
-  training   : loss = 0.46901360154151917, accuracy = 0.8675813009099262
-  validation : loss = 0.3236832618713379, accuracy = 0.9113247853059036
+  training   : loss = 0.5051045417785645, accuracy = 0.8560975609756097
+  validation : loss = 0.31002840399742126, accuracy = 0.9173344006905189
 
 curently 9th epoch
-  training   : loss = 0.4564618766307831, accuracy = 0.870579268292683
-  validation : loss = 0.43957045674324036, accuracy = 0.9013087611932021
+  training   : loss = 0.46340084075927734, accuracy = 0.8664126015290982
+  validation : loss = 0.33820977807044983, accuracy = 0.9098557692307693
 
 curently 10th epoch
-  training   : loss = 0.40806683897972107, accuracy = 0.8839430893339761
-  validation : loss = 0.3157767951488495, accuracy = 0.9170673076923077
-
-curently 11th epoch
-  training   : loss = 0.3974379003047943, accuracy = 0.8889735771388543
-  validation : loss = 0.3377111852169037, accuracy = 0.9149305545366727
-
-curently 12th epoch
-  training   : loss = 0.3619895279407501, accuracy = 0.8917682926829268
-  validation : loss = 0.320803701877594, accuracy = 0.918536323767442
-
-curently 13th epoch
-  training   : loss = 0.3789733946323395, accuracy = 0.8919715448123653
-  validation : loss = 0.3656074106693268, accuracy = 0.9170673076923077
-
-curently 14th epoch
-  training   : loss = 0.3358779549598694, accuracy = 0.9051321137242201
-  validation : loss = 0.3245610296726227, accuracy = 0.9245459391520574
-
-curently 15th epoch
-  training   : loss = 0.3320297598838806, accuracy = 0.9028455283583664
-  validation : loss = 0.3652203679084778, accuracy = 0.9162660264051877
+  training   : loss = 0.4293689727783203, accuracy = 0.8778963414634147
+  validation : loss = 0.33374178409576416, accuracy = 0.9091880344427549
 
 
 training finished
-  testing   : loss = 0.025311965495347977, accuracy = 0.8989752531051636
+  testing   : loss = 0.012962741777300835, accuracy = 0.886955976486206
 
 checkpoint saved in checkpoint.pth

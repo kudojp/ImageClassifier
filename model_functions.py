@@ -9,12 +9,50 @@ from torchvision import models, datasets, transforms
 import torch.nn.functional as F
 from collections import OrderedDict
 
+
+
+# check whether command arguments are valid
+def check_args(args):
+    if (args["arch"] != "vgg13") & (args["arch"] != "vgg16") & (args["arch"] != "densenet121"):
+        print("pick the model from vgg13 or vgg16 or densenet121")
+        exit()
+
+    # if learning rate is invalid, exit
+    if args["learning_rate"] <=0:
+        print("Please set the positive learning rate")
+        exit()
+
+    if args["hidden_units"] < 1:
+        print("Please set the positive number of hidden layers")
+        exit()
+
+    if (args["epochs"] <= 0 ):
+        print("Please set the valid learning rate")
+        exit()
+
+
+
 # returns the model newly made
-def generate_model():
-    model = models.vgg16(pretrained=True)
-    classifier_dict = OrderedDict([("fc1",nn.Linear(25088,4096)), ("relu1", nn.ReLU()), ("fc2", nn.Linear(4096,102)), ("p_out", nn.LogSoftmax(dim=1))])
+def generate_model(arch, units):
+    if (arch == "vgg13"):
+        model = models.vgg13(pretrained=True)
+        input_size = model.classifier[0].in_features
+    elif (arch == "vgg16"):
+        model = models.vgg16(pretrained=True)
+        input_size = model.classifier[0].in_features
+    elif (arch == "densenet121"):
+        model = models.densenet121(pretrained=True)
+        input_size = model.classifier.in_features
+    else:
+        print("error")
+        exit()
+    classifier_dict = OrderedDict([("fc1",nn.Linear(input_size, units)),
+                                    ("relu1", nn.ReLU()),
+                                    ("dropout", nn.Dropout(0.2)),
+                                    ("fc2", nn.Linear(units,102)),
+                                    ("p_out", nn.LogSoftmax(dim=1))])
     model.classifier = nn.Sequential(classifier_dict)
-    return model
+    return model, classifier_dict
 
 
 # returns the model trained. also pronts the process and validation result
@@ -96,7 +134,7 @@ def test_model(model, device, optimizer, criterion, test_loader):
 
 
 
-#  return the model, cumulative epoch counts, and class_to_idx mapping
+#  return the model, cumulative epoch counts, and class_to_idx mapping from checkpoint file
 def load_checkpoint(filepath, device):
     checkpoint = torch.load(filepath, map_location=device)
     epochs = checkpoint["epochs"]
@@ -105,6 +143,8 @@ def load_checkpoint(filepath, device):
         model = models.vgg13(pretrained=True)
     elif checkpoint["arch"]=="vgg16":
         model = models.vgg16(pretrained=True)
+    elif checkpoint["arch"]=="densenet121":
+        model = models.densenet121(pretrained=True)
     else:
         print("model not suitable")
         exit()

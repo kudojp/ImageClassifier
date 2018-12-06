@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-
-<title>Image Classifier Project</title>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ImageClassifierProject</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
 
 <style type="text/css">
     /*!
@@ -204,6 +199,7 @@ th {
   *:before,
   *:after {
     background: transparent !important;
+    color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -6748,15 +6744,15 @@ button.close {
 *
 */
 /*!
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../components/font-awesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../components/font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -6813,19 +6809,6 @@ button.close {
   border: solid 0.08em #eee;
   border-radius: .1em;
 }
-.fa-pull-left {
-  float: left;
-}
-.fa-pull-right {
-  float: right;
-}
-.fa.fa-pull-left {
-  margin-right: .3em;
-}
-.fa.fa-pull-right {
-  margin-left: .3em;
-}
-/* Deprecated as of 4.4.0 */
 .pull-right {
   float: right;
 }
@@ -6841,10 +6824,6 @@ button.close {
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
-}
-.fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8);
 }
 @-webkit-keyframes fa-spin {
   0% {
@@ -6867,31 +6846,31 @@ button.close {
   }
 }
 .fa-rotate-90 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .fa-rotate-180 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 .fa-rotate-270 {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .fa-flip-horizontal {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 .fa-flip-vertical {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
@@ -7376,7 +7355,6 @@ button.close {
 .fa-twitter:before {
   content: "\f099";
 }
-.fa-facebook-f:before,
 .fa-facebook:before {
   content: "\f09a";
 }
@@ -7389,7 +7367,6 @@ button.close {
 .fa-credit-card:before {
   content: "\f09d";
 }
-.fa-feed:before,
 .fa-rss:before {
   content: "\f09e";
 }
@@ -8027,8 +8004,7 @@ button.close {
 .fa-male:before {
   content: "\f183";
 }
-.fa-gittip:before,
-.fa-gratipay:before {
+.fa-gittip:before {
   content: "\f184";
 }
 .fa-sun-o:before {
@@ -8132,7 +8108,7 @@ button.close {
 .fa-digg:before {
   content: "\f1a6";
 }
-.fa-pied-piper-pp:before {
+.fa-pied-piper:before {
   content: "\f1a7";
 }
 .fa-pied-piper-alt:before {
@@ -8258,7 +8234,6 @@ button.close {
   content: "\f1ce";
 }
 .fa-ra:before,
-.fa-resistance:before,
 .fa-rebel:before {
   content: "\f1d0";
 }
@@ -8272,8 +8247,6 @@ button.close {
 .fa-git:before {
   content: "\f1d3";
 }
-.fa-y-combinator-square:before,
-.fa-yc-square:before,
 .fa-hacker-news:before {
   content: "\f1d4";
 }
@@ -8441,657 +8414,6 @@ button.close {
 }
 .fa-meanpath:before {
   content: "\f20c";
-}
-.fa-buysellads:before {
-  content: "\f20d";
-}
-.fa-connectdevelop:before {
-  content: "\f20e";
-}
-.fa-dashcube:before {
-  content: "\f210";
-}
-.fa-forumbee:before {
-  content: "\f211";
-}
-.fa-leanpub:before {
-  content: "\f212";
-}
-.fa-sellsy:before {
-  content: "\f213";
-}
-.fa-shirtsinbulk:before {
-  content: "\f214";
-}
-.fa-simplybuilt:before {
-  content: "\f215";
-}
-.fa-skyatlas:before {
-  content: "\f216";
-}
-.fa-cart-plus:before {
-  content: "\f217";
-}
-.fa-cart-arrow-down:before {
-  content: "\f218";
-}
-.fa-diamond:before {
-  content: "\f219";
-}
-.fa-ship:before {
-  content: "\f21a";
-}
-.fa-user-secret:before {
-  content: "\f21b";
-}
-.fa-motorcycle:before {
-  content: "\f21c";
-}
-.fa-street-view:before {
-  content: "\f21d";
-}
-.fa-heartbeat:before {
-  content: "\f21e";
-}
-.fa-venus:before {
-  content: "\f221";
-}
-.fa-mars:before {
-  content: "\f222";
-}
-.fa-mercury:before {
-  content: "\f223";
-}
-.fa-intersex:before,
-.fa-transgender:before {
-  content: "\f224";
-}
-.fa-transgender-alt:before {
-  content: "\f225";
-}
-.fa-venus-double:before {
-  content: "\f226";
-}
-.fa-mars-double:before {
-  content: "\f227";
-}
-.fa-venus-mars:before {
-  content: "\f228";
-}
-.fa-mars-stroke:before {
-  content: "\f229";
-}
-.fa-mars-stroke-v:before {
-  content: "\f22a";
-}
-.fa-mars-stroke-h:before {
-  content: "\f22b";
-}
-.fa-neuter:before {
-  content: "\f22c";
-}
-.fa-genderless:before {
-  content: "\f22d";
-}
-.fa-facebook-official:before {
-  content: "\f230";
-}
-.fa-pinterest-p:before {
-  content: "\f231";
-}
-.fa-whatsapp:before {
-  content: "\f232";
-}
-.fa-server:before {
-  content: "\f233";
-}
-.fa-user-plus:before {
-  content: "\f234";
-}
-.fa-user-times:before {
-  content: "\f235";
-}
-.fa-hotel:before,
-.fa-bed:before {
-  content: "\f236";
-}
-.fa-viacoin:before {
-  content: "\f237";
-}
-.fa-train:before {
-  content: "\f238";
-}
-.fa-subway:before {
-  content: "\f239";
-}
-.fa-medium:before {
-  content: "\f23a";
-}
-.fa-yc:before,
-.fa-y-combinator:before {
-  content: "\f23b";
-}
-.fa-optin-monster:before {
-  content: "\f23c";
-}
-.fa-opencart:before {
-  content: "\f23d";
-}
-.fa-expeditedssl:before {
-  content: "\f23e";
-}
-.fa-battery-4:before,
-.fa-battery:before,
-.fa-battery-full:before {
-  content: "\f240";
-}
-.fa-battery-3:before,
-.fa-battery-three-quarters:before {
-  content: "\f241";
-}
-.fa-battery-2:before,
-.fa-battery-half:before {
-  content: "\f242";
-}
-.fa-battery-1:before,
-.fa-battery-quarter:before {
-  content: "\f243";
-}
-.fa-battery-0:before,
-.fa-battery-empty:before {
-  content: "\f244";
-}
-.fa-mouse-pointer:before {
-  content: "\f245";
-}
-.fa-i-cursor:before {
-  content: "\f246";
-}
-.fa-object-group:before {
-  content: "\f247";
-}
-.fa-object-ungroup:before {
-  content: "\f248";
-}
-.fa-sticky-note:before {
-  content: "\f249";
-}
-.fa-sticky-note-o:before {
-  content: "\f24a";
-}
-.fa-cc-jcb:before {
-  content: "\f24b";
-}
-.fa-cc-diners-club:before {
-  content: "\f24c";
-}
-.fa-clone:before {
-  content: "\f24d";
-}
-.fa-balance-scale:before {
-  content: "\f24e";
-}
-.fa-hourglass-o:before {
-  content: "\f250";
-}
-.fa-hourglass-1:before,
-.fa-hourglass-start:before {
-  content: "\f251";
-}
-.fa-hourglass-2:before,
-.fa-hourglass-half:before {
-  content: "\f252";
-}
-.fa-hourglass-3:before,
-.fa-hourglass-end:before {
-  content: "\f253";
-}
-.fa-hourglass:before {
-  content: "\f254";
-}
-.fa-hand-grab-o:before,
-.fa-hand-rock-o:before {
-  content: "\f255";
-}
-.fa-hand-stop-o:before,
-.fa-hand-paper-o:before {
-  content: "\f256";
-}
-.fa-hand-scissors-o:before {
-  content: "\f257";
-}
-.fa-hand-lizard-o:before {
-  content: "\f258";
-}
-.fa-hand-spock-o:before {
-  content: "\f259";
-}
-.fa-hand-pointer-o:before {
-  content: "\f25a";
-}
-.fa-hand-peace-o:before {
-  content: "\f25b";
-}
-.fa-trademark:before {
-  content: "\f25c";
-}
-.fa-registered:before {
-  content: "\f25d";
-}
-.fa-creative-commons:before {
-  content: "\f25e";
-}
-.fa-gg:before {
-  content: "\f260";
-}
-.fa-gg-circle:before {
-  content: "\f261";
-}
-.fa-tripadvisor:before {
-  content: "\f262";
-}
-.fa-odnoklassniki:before {
-  content: "\f263";
-}
-.fa-odnoklassniki-square:before {
-  content: "\f264";
-}
-.fa-get-pocket:before {
-  content: "\f265";
-}
-.fa-wikipedia-w:before {
-  content: "\f266";
-}
-.fa-safari:before {
-  content: "\f267";
-}
-.fa-chrome:before {
-  content: "\f268";
-}
-.fa-firefox:before {
-  content: "\f269";
-}
-.fa-opera:before {
-  content: "\f26a";
-}
-.fa-internet-explorer:before {
-  content: "\f26b";
-}
-.fa-tv:before,
-.fa-television:before {
-  content: "\f26c";
-}
-.fa-contao:before {
-  content: "\f26d";
-}
-.fa-500px:before {
-  content: "\f26e";
-}
-.fa-amazon:before {
-  content: "\f270";
-}
-.fa-calendar-plus-o:before {
-  content: "\f271";
-}
-.fa-calendar-minus-o:before {
-  content: "\f272";
-}
-.fa-calendar-times-o:before {
-  content: "\f273";
-}
-.fa-calendar-check-o:before {
-  content: "\f274";
-}
-.fa-industry:before {
-  content: "\f275";
-}
-.fa-map-pin:before {
-  content: "\f276";
-}
-.fa-map-signs:before {
-  content: "\f277";
-}
-.fa-map-o:before {
-  content: "\f278";
-}
-.fa-map:before {
-  content: "\f279";
-}
-.fa-commenting:before {
-  content: "\f27a";
-}
-.fa-commenting-o:before {
-  content: "\f27b";
-}
-.fa-houzz:before {
-  content: "\f27c";
-}
-.fa-vimeo:before {
-  content: "\f27d";
-}
-.fa-black-tie:before {
-  content: "\f27e";
-}
-.fa-fonticons:before {
-  content: "\f280";
-}
-.fa-reddit-alien:before {
-  content: "\f281";
-}
-.fa-edge:before {
-  content: "\f282";
-}
-.fa-credit-card-alt:before {
-  content: "\f283";
-}
-.fa-codiepie:before {
-  content: "\f284";
-}
-.fa-modx:before {
-  content: "\f285";
-}
-.fa-fort-awesome:before {
-  content: "\f286";
-}
-.fa-usb:before {
-  content: "\f287";
-}
-.fa-product-hunt:before {
-  content: "\f288";
-}
-.fa-mixcloud:before {
-  content: "\f289";
-}
-.fa-scribd:before {
-  content: "\f28a";
-}
-.fa-pause-circle:before {
-  content: "\f28b";
-}
-.fa-pause-circle-o:before {
-  content: "\f28c";
-}
-.fa-stop-circle:before {
-  content: "\f28d";
-}
-.fa-stop-circle-o:before {
-  content: "\f28e";
-}
-.fa-shopping-bag:before {
-  content: "\f290";
-}
-.fa-shopping-basket:before {
-  content: "\f291";
-}
-.fa-hashtag:before {
-  content: "\f292";
-}
-.fa-bluetooth:before {
-  content: "\f293";
-}
-.fa-bluetooth-b:before {
-  content: "\f294";
-}
-.fa-percent:before {
-  content: "\f295";
-}
-.fa-gitlab:before {
-  content: "\f296";
-}
-.fa-wpbeginner:before {
-  content: "\f297";
-}
-.fa-wpforms:before {
-  content: "\f298";
-}
-.fa-envira:before {
-  content: "\f299";
-}
-.fa-universal-access:before {
-  content: "\f29a";
-}
-.fa-wheelchair-alt:before {
-  content: "\f29b";
-}
-.fa-question-circle-o:before {
-  content: "\f29c";
-}
-.fa-blind:before {
-  content: "\f29d";
-}
-.fa-audio-description:before {
-  content: "\f29e";
-}
-.fa-volume-control-phone:before {
-  content: "\f2a0";
-}
-.fa-braille:before {
-  content: "\f2a1";
-}
-.fa-assistive-listening-systems:before {
-  content: "\f2a2";
-}
-.fa-asl-interpreting:before,
-.fa-american-sign-language-interpreting:before {
-  content: "\f2a3";
-}
-.fa-deafness:before,
-.fa-hard-of-hearing:before,
-.fa-deaf:before {
-  content: "\f2a4";
-}
-.fa-glide:before {
-  content: "\f2a5";
-}
-.fa-glide-g:before {
-  content: "\f2a6";
-}
-.fa-signing:before,
-.fa-sign-language:before {
-  content: "\f2a7";
-}
-.fa-low-vision:before {
-  content: "\f2a8";
-}
-.fa-viadeo:before {
-  content: "\f2a9";
-}
-.fa-viadeo-square:before {
-  content: "\f2aa";
-}
-.fa-snapchat:before {
-  content: "\f2ab";
-}
-.fa-snapchat-ghost:before {
-  content: "\f2ac";
-}
-.fa-snapchat-square:before {
-  content: "\f2ad";
-}
-.fa-pied-piper:before {
-  content: "\f2ae";
-}
-.fa-first-order:before {
-  content: "\f2b0";
-}
-.fa-yoast:before {
-  content: "\f2b1";
-}
-.fa-themeisle:before {
-  content: "\f2b2";
-}
-.fa-google-plus-circle:before,
-.fa-google-plus-official:before {
-  content: "\f2b3";
-}
-.fa-fa:before,
-.fa-font-awesome:before {
-  content: "\f2b4";
-}
-.fa-handshake-o:before {
-  content: "\f2b5";
-}
-.fa-envelope-open:before {
-  content: "\f2b6";
-}
-.fa-envelope-open-o:before {
-  content: "\f2b7";
-}
-.fa-linode:before {
-  content: "\f2b8";
-}
-.fa-address-book:before {
-  content: "\f2b9";
-}
-.fa-address-book-o:before {
-  content: "\f2ba";
-}
-.fa-vcard:before,
-.fa-address-card:before {
-  content: "\f2bb";
-}
-.fa-vcard-o:before,
-.fa-address-card-o:before {
-  content: "\f2bc";
-}
-.fa-user-circle:before {
-  content: "\f2bd";
-}
-.fa-user-circle-o:before {
-  content: "\f2be";
-}
-.fa-user-o:before {
-  content: "\f2c0";
-}
-.fa-id-badge:before {
-  content: "\f2c1";
-}
-.fa-drivers-license:before,
-.fa-id-card:before {
-  content: "\f2c2";
-}
-.fa-drivers-license-o:before,
-.fa-id-card-o:before {
-  content: "\f2c3";
-}
-.fa-quora:before {
-  content: "\f2c4";
-}
-.fa-free-code-camp:before {
-  content: "\f2c5";
-}
-.fa-telegram:before {
-  content: "\f2c6";
-}
-.fa-thermometer-4:before,
-.fa-thermometer:before,
-.fa-thermometer-full:before {
-  content: "\f2c7";
-}
-.fa-thermometer-3:before,
-.fa-thermometer-three-quarters:before {
-  content: "\f2c8";
-}
-.fa-thermometer-2:before,
-.fa-thermometer-half:before {
-  content: "\f2c9";
-}
-.fa-thermometer-1:before,
-.fa-thermometer-quarter:before {
-  content: "\f2ca";
-}
-.fa-thermometer-0:before,
-.fa-thermometer-empty:before {
-  content: "\f2cb";
-}
-.fa-shower:before {
-  content: "\f2cc";
-}
-.fa-bathtub:before,
-.fa-s15:before,
-.fa-bath:before {
-  content: "\f2cd";
-}
-.fa-podcast:before {
-  content: "\f2ce";
-}
-.fa-window-maximize:before {
-  content: "\f2d0";
-}
-.fa-window-minimize:before {
-  content: "\f2d1";
-}
-.fa-window-restore:before {
-  content: "\f2d2";
-}
-.fa-times-rectangle:before,
-.fa-window-close:before {
-  content: "\f2d3";
-}
-.fa-times-rectangle-o:before,
-.fa-window-close-o:before {
-  content: "\f2d4";
-}
-.fa-bandcamp:before {
-  content: "\f2d5";
-}
-.fa-grav:before {
-  content: "\f2d6";
-}
-.fa-etsy:before {
-  content: "\f2d7";
-}
-.fa-imdb:before {
-  content: "\f2d8";
-}
-.fa-ravelry:before {
-  content: "\f2d9";
-}
-.fa-eercast:before {
-  content: "\f2da";
-}
-.fa-microchip:before {
-  content: "\f2db";
-}
-.fa-snowflake-o:before {
-  content: "\f2dc";
-}
-.fa-superpowers:before {
-  content: "\f2dd";
-}
-.fa-wpexplorer:before {
-  content: "\f2de";
-}
-.fa-meetup:before {
-  content: "\f2e0";
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-}
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
 }
 /*!
 *
@@ -9372,10 +8694,6 @@ div.traceback-wrapper {
   max-width: 800px;
   margin: auto;
 }
-div.traceback-wrapper pre.traceback {
-  max-height: 600px;
-  overflow: auto;
-}
 /**
  * Primary styles
  *
@@ -9401,10 +8719,6 @@ body > #header {
   z-index: 100;
 }
 body > #header #header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px;
   padding-bottom: 5px;
   padding-top: 5px;
   box-sizing: border-box;
@@ -9436,16 +8750,13 @@ body > #header .header-bar {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+@media (max-width: 991px) {
+  #ipython_notebook {
+    margin-left: 10px;
+  }
+}
 [dir="rtl"] #ipython_notebook {
-  margin-right: 10px;
-  margin-left: 0;
-}
-[dir="rtl"] #ipython_notebook.pull-left {
   float: right !important;
-  float: right;
-}
-.flex-spacer {
-  flex: 1;
 }
 #noscript {
   width: auto;
@@ -9480,14 +8791,8 @@ body > #header .header-bar {
 input.ui-button {
   padding: 0.3em 0.9em;
 }
-span#kernel_logo_widget {
-  margin: 0 10px;
-}
 span#login_widget {
   float: right;
-}
-[dir="rtl"] span#login_widget {
-  float: left;
 }
 span#login_widget > .button,
 #logout {
@@ -9603,9 +8908,6 @@ span#login_widget > .button .badge,
   overflow: auto;
   flex: 1;
 }
-.modal-header {
-  cursor: move;
-}
 @media (min-width: 768px) {
   .modal .modal-dialog {
     width: 700px;
@@ -9626,19 +8928,6 @@ span#login_widget > .button .badge,
   display: inline-block;
   margin-bottom: -4px;
 }
-[dir="rtl"] .center-nav form.pull-left {
-  float: right !important;
-  float: right;
-}
-[dir="rtl"] .center-nav .navbar-text {
-  float: right;
-}
-[dir="rtl"] .navbar-inner {
-  text-align: right;
-}
-[dir="rtl"] div.text-left {
-  text-align: right;
-}
 /*!
 *
 * IPython tree view
@@ -9655,42 +8944,34 @@ span#login_widget > .button .badge,
   margin: 0;
 }
 .alternate_upload input.fileinput {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  display: inline;
   opacity: 0;
   z-index: 2;
-}
-.alternate_upload .btn-xs > input.fileinput {
-  margin: -1px -5px;
+  width: 12ex;
+  margin-right: -12ex;
 }
 .alternate_upload .btn-upload {
-  position: relative;
   height: 22px;
-}
-::-webkit-file-upload-button {
-  cursor: pointer;
 }
 /**
  * Primary styles
  *
  * Author: Jupyter Development Team
  */
+[dir="rtl"] #tabs li {
+  float: right;
+}
 ul#tabs {
   margin-bottom: 4px;
+}
+[dir="rtl"] ul#tabs {
+  margin-right: 0px;
 }
 ul#tabs a {
   padding-top: 6px;
   padding-bottom: 4px;
-}
-[dir="rtl"] ul#tabs.nav-tabs > li {
-  float: right;
-}
-[dir="rtl"] ul#tabs.nav.nav-tabs {
-  padding-right: 0;
 }
 ul.breadcrumb a:focus,
 ul.breadcrumb a:hover {
@@ -9710,13 +8991,15 @@ ul.breadcrumb span {
 .list_toolbar .tree-buttons {
   padding-top: 1px;
 }
-[dir="rtl"] .list_toolbar .tree-buttons .pull-right {
+[dir="rtl"] .list_toolbar .tree-buttons {
   float: left !important;
-  float: left;
 }
-[dir="rtl"] .list_toolbar .col-sm-4,
-[dir="rtl"] .list_toolbar .col-sm-8 {
-  float: right;
+[dir="rtl"] .list_toolbar .pull-right {
+  padding-top: 1px;
+  float: left !important;
+}
+[dir="rtl"] .list_toolbar .pull-left {
+  float: right !important;
 }
 .dynamic-buttons {
   padding-top: 3px;
@@ -9772,7 +9055,7 @@ ul.breadcrumb span {
 .list_item > div input {
   margin-right: 7px;
   margin-left: 14px;
-  vertical-align: text-bottom;
+  vertical-align: baseline;
   line-height: 22px;
   position: relative;
   top: -1px;
@@ -9782,9 +9065,6 @@ ul.breadcrumb span {
   margin-left: -1px;
   vertical-align: baseline;
   line-height: 22px;
-}
-[dir="rtl"] .list_item > div input {
-  margin-right: 0;
 }
 .new-file input[type=checkbox] {
   visibility: hidden;
@@ -9800,14 +9080,6 @@ ul.breadcrumb span {
   margin-left: 7px;
   line-height: 22px;
   vertical-align: baseline;
-}
-.item_modified {
-  margin-right: 7px;
-  margin-left: 7px;
-}
-[dir="rtl"] .item_modified.pull-right {
-  float: left !important;
-  float: left;
 }
 .item_buttons {
   line-height: 1em;
@@ -9836,14 +9108,6 @@ ul.breadcrumb span {
   margin-right: 7px;
   float: left;
 }
-[dir="rtl"] .item_buttons.pull-right {
-  float: left !important;
-  float: left;
-}
-[dir="rtl"] .item_buttons .kernel-name {
-  margin-left: 7px;
-  float: right;
-}
 .toolbar_info {
   height: 24px;
   line-height: 24px;
@@ -9869,32 +9133,18 @@ ul.breadcrumb span {
   background-color: transparent;
   font-weight: bold;
 }
-.sort_button {
-  display: inline-block;
-  padding-left: 7px;
-}
-[dir="rtl"] .sort_button.pull-right {
-  float: left !important;
-  float: left;
-}
 #tree-selector {
   padding-right: 0px;
+}
+[dir="rtl"] #tree-selector a {
+  float: right;
 }
 #button-select-all {
   min-width: 50px;
 }
-[dir="rtl"] #button-select-all.btn {
-  float: right ;
-}
 #select-all {
   margin-left: 7px;
   margin-right: 2px;
-  margin-top: 2px;
-  height: 16px;
-}
-[dir="rtl"] #select-all.pull-left {
-  float: right !important;
-  float: right;
 }
 .menu_icon {
   margin-right: 2px;
@@ -9912,12 +9162,6 @@ ul.breadcrumb span {
   -moz-osx-font-smoothing: grayscale;
   content: "\f114";
 }
-.folder_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.folder_icon:before.fa-pull-right {
-  margin-left: .3em;
-}
 .folder_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9934,12 +9178,6 @@ ul.breadcrumb span {
   content: "\f02d";
   position: relative;
   top: -1px;
-}
-.notebook_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.notebook_icon:before.fa-pull-right {
-  margin-left: .3em;
 }
 .notebook_icon:before.pull-left {
   margin-right: .3em;
@@ -9959,12 +9197,6 @@ ul.breadcrumb span {
   top: -1px;
   color: #5cb85c;
 }
-.running_notebook_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.running_notebook_icon:before.fa-pull-right {
-  margin-left: .3em;
-}
 .running_notebook_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -9982,12 +9214,6 @@ ul.breadcrumb span {
   position: relative;
   top: -2px;
 }
-.file_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.file_icon:before.fa-pull-right {
-  margin-left: .3em;
-}
 .file_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -10002,11 +9228,8 @@ ul#new-menu {
   left: auto;
   right: 0;
 }
-#new-menu .dropdown-header {
-  font-size: 10px;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 0 0 3px;
-  margin: -3px 20px 0;
+[dir="rtl"] #new-menu {
+  text-align: right;
 }
 .kernel-menu-icon {
   padding-right: 12px;
@@ -10053,6 +9276,9 @@ ul#new-menu {
 #running .panel-group .panel .panel-body .list_container .list_item:last-child {
   border-bottom: 0px;
 }
+[dir="rtl"] #running .col-sm-8 {
+  float: right !important;
+}
 .delete-button {
   display: none;
 }
@@ -10060,12 +9286,6 @@ ul#new-menu {
   display: none;
 }
 .rename-button {
-  display: none;
-}
-.move-button {
-  display: none;
-}
-.download-button {
   display: none;
 }
 .shutdown-button {
@@ -10108,12 +9328,6 @@ ul#new-menu {
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
 }
-.dirty-indicator.fa-pull-left {
-  margin-right: .3em;
-}
-.dirty-indicator.fa-pull-right {
-  margin-left: .3em;
-}
 .dirty-indicator.pull-left {
   margin-right: .3em;
 }
@@ -10128,12 +9342,6 @@ ul#new-menu {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
-}
-.dirty-indicator-dirty.fa-pull-left {
-  margin-right: .3em;
-}
-.dirty-indicator-dirty.fa-pull-right {
-  margin-left: .3em;
 }
 .dirty-indicator-dirty.pull-left {
   margin-right: .3em;
@@ -10150,12 +9358,6 @@ ul#new-menu {
   -moz-osx-font-smoothing: grayscale;
   width: 20px;
 }
-.dirty-indicator-clean.fa-pull-left {
-  margin-right: .3em;
-}
-.dirty-indicator-clean.fa-pull-right {
-  margin-left: .3em;
-}
 .dirty-indicator-clean.pull-left {
   margin-right: .3em;
 }
@@ -10170,12 +9372,6 @@ ul#new-menu {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f00c";
-}
-.dirty-indicator-clean:before.fa-pull-left {
-  margin-right: .3em;
-}
-.dirty-indicator-clean:before.fa-pull-right {
-  margin-left: .3em;
 }
 .dirty-indicator-clean:before.pull-left {
   margin-right: .3em;
@@ -10221,132 +9417,14 @@ ul#new-menu {
     box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
   }
 }
-.CodeMirror-dialog {
-  background-color: #fff;
-}
 /*!
 *
 * IPython notebook
 *
 */
-/* CSS font colors for translated ANSI escape sequences */
-/* The color values are a mix of
-   http://www.xcolors.net/dl/baskerville-ivorylight and
-   http://www.xcolors.net/dl/euphrasia */
-.ansi-black-fg {
-  color: #3E424D;
-}
-.ansi-black-bg {
-  background-color: #3E424D;
-}
-.ansi-black-intense-fg {
-  color: #282C36;
-}
-.ansi-black-intense-bg {
-  background-color: #282C36;
-}
-.ansi-red-fg {
-  color: #E75C58;
-}
-.ansi-red-bg {
-  background-color: #E75C58;
-}
-.ansi-red-intense-fg {
-  color: #B22B31;
-}
-.ansi-red-intense-bg {
-  background-color: #B22B31;
-}
-.ansi-green-fg {
-  color: #00A250;
-}
-.ansi-green-bg {
-  background-color: #00A250;
-}
-.ansi-green-intense-fg {
-  color: #007427;
-}
-.ansi-green-intense-bg {
-  background-color: #007427;
-}
-.ansi-yellow-fg {
-  color: #DDB62B;
-}
-.ansi-yellow-bg {
-  background-color: #DDB62B;
-}
-.ansi-yellow-intense-fg {
-  color: #B27D12;
-}
-.ansi-yellow-intense-bg {
-  background-color: #B27D12;
-}
-.ansi-blue-fg {
-  color: #208FFB;
-}
-.ansi-blue-bg {
-  background-color: #208FFB;
-}
-.ansi-blue-intense-fg {
-  color: #0065CA;
-}
-.ansi-blue-intense-bg {
-  background-color: #0065CA;
-}
-.ansi-magenta-fg {
-  color: #D160C4;
-}
-.ansi-magenta-bg {
-  background-color: #D160C4;
-}
-.ansi-magenta-intense-fg {
-  color: #A03196;
-}
-.ansi-magenta-intense-bg {
-  background-color: #A03196;
-}
-.ansi-cyan-fg {
-  color: #60C6C8;
-}
-.ansi-cyan-bg {
-  background-color: #60C6C8;
-}
-.ansi-cyan-intense-fg {
-  color: #258F8F;
-}
-.ansi-cyan-intense-bg {
-  background-color: #258F8F;
-}
-.ansi-white-fg {
-  color: #C5C1B4;
-}
-.ansi-white-bg {
-  background-color: #C5C1B4;
-}
-.ansi-white-intense-fg {
-  color: #A1A6B2;
-}
-.ansi-white-intense-bg {
-  background-color: #A1A6B2;
-}
-.ansi-default-inverse-fg {
-  color: #FFFFFF;
-}
-.ansi-default-inverse-bg {
-  background-color: #000000;
-}
-.ansi-bold {
-  font-weight: bold;
-}
-.ansi-underline {
-  text-decoration: underline;
-}
-/* The following styles are deprecated an will be removed in a future version */
+/* CSS font colors for translated ANSI colors. */
 .ansibold {
   font-weight: bold;
-}
-.ansi-inverse {
-  outline: 0.5px dotted;
 }
 /* use dark versions for foreground, to improve visibility */
 .ansiblack {
@@ -10425,20 +9503,12 @@ div.cell {
   /* This acts as a spacer between cells, that is outside the border */
   margin: 0px;
   outline: none;
-  position: relative;
-  overflow: visible;
-}
-div.cell:before {
-  position: absolute;
-  display: block;
-  top: -1px;
-  left: -1px;
-  width: 5px;
-  height: calc(100% +  2px);
-  content: '';
-  background: transparent;
+  border-left-width: 1px;
+  padding-left: 5px;
+  background: linear-gradient(to right, transparent -40px, transparent 1px, transparent 1px, transparent 100%);
 }
 div.cell.jupyter-soft-selected {
+  border-left-color: #90CAF9;
   border-left-color: #E3F2FD;
   border-left-width: 1px;
   padding-left: 5px;
@@ -10451,39 +9521,27 @@ div.cell.jupyter-soft-selected {
     border-color: transparent;
   }
 }
-div.cell.selected,
-div.cell.selected.jupyter-soft-selected {
+div.cell.selected {
   border-color: #ababab;
-}
-div.cell.selected:before,
-div.cell.selected.jupyter-soft-selected:before {
-  position: absolute;
-  display: block;
-  top: -1px;
-  left: -1px;
-  width: 5px;
-  height: calc(100% +  2px);
-  content: '';
-  background: #42A5F5;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 5px, transparent 5px, transparent 100%);
 }
 @media print {
-  div.cell.selected,
-  div.cell.selected.jupyter-soft-selected {
+  div.cell.selected {
     border-color: transparent;
   }
 }
+div.cell.selected.jupyter-soft-selected {
+  border-left-width: 0;
+  padding-left: 6px;
+  background: linear-gradient(to right, #42A5F5 -40px, #42A5F5 7px, #E3F2FD 7px, #E3F2FD 100%);
+}
 .edit_mode div.cell.selected {
   border-color: #66BB6A;
-}
-.edit_mode div.cell.selected:before {
-  position: absolute;
-  display: block;
-  top: -1px;
-  left: -1px;
-  width: 5px;
-  height: calc(100% +  2px);
-  content: '';
-  background: #66BB6A;
+  border-left-width: 0px;
+  padding-left: 6px;
+  background: linear-gradient(to right, #66BB6A -40px, #66BB6A 5px, transparent 5px, transparent 100%);
 }
 @media print {
   .edit_mode div.cell.selected {
@@ -10679,9 +9737,7 @@ div.input_area > div.highlight > pre {
 .CodeMirror-lines {
   /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
   /* we have set a different line-height and want this to scale with that. */
-  /* Note that this should set vertical padding only, since CodeMirror assumes
-       that horizontal padding will be set on CodeMirror pre */
-  padding: 0.4em 0;
+  padding: 0.4em;
 }
 .CodeMirror-linenumber {
   padding: 0 8px 0 4px;
@@ -10691,24 +9747,11 @@ div.input_area > div.highlight > pre {
   border-top-left-radius: 2px;
 }
 .CodeMirror pre {
-  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
-    use .CodeMirror-lines for vertical */
-  padding: 0 0.4em;
+  /* In CM3 this went to 4px from 0 in CM2. We need the 0 value because of how we size */
+  /* .CodeMirror-lines */
+  padding: 0;
   border: 0;
   border-radius: 0;
-}
-.CodeMirror-cursor {
-  border-left: 1.4px solid black;
-}
-@media screen and (min-width: 2138px) and (max-width: 4319px) {
-  .CodeMirror-cursor {
-    border-left: 2px solid black;
-  }
-}
-@media screen and (min-width: 4320px) {
-  .CodeMirror-cursor {
-    border-left: 4px solid black;
-  }
 }
 /*
 
@@ -10962,9 +10005,6 @@ div.output_area img.unconfined,
 div.output_area svg.unconfined {
   max-width: none;
 }
-div.output_area .mglyph > img {
-  max-width: none;
-}
 /* This is needed to protect the pre formating from global settings such
    as that of bootstrap */
 .output {
@@ -11003,7 +10043,7 @@ div.output_area .mglyph > img {
 }
 div.output_area pre {
   margin: 0;
-  padding: 1px 0 1px 0;
+  padding: 0;
   border: 0;
   vertical-align: baseline;
   color: black;
@@ -11163,35 +10203,39 @@ div.output_unrecognized a:hover {
 .rendered_html h6:first-child {
   margin-top: 1em;
 }
-.rendered_html ul:not(.list-inline),
-.rendered_html ol:not(.list-inline) {
-  padding-left: 2em;
-}
 .rendered_html ul {
   list-style: disc;
+  margin: 0em 2em;
+  padding-left: 0px;
 }
 .rendered_html ul ul {
   list-style: square;
-  margin-top: 0;
+  margin: 0em 2em;
 }
 .rendered_html ul ul ul {
   list-style: circle;
+  margin: 0em 2em;
 }
 .rendered_html ol {
   list-style: decimal;
+  margin: 0em 2em;
+  padding-left: 0px;
 }
 .rendered_html ol ol {
   list-style: upper-alpha;
-  margin-top: 0;
+  margin: 0em 2em;
 }
 .rendered_html ol ol ol {
   list-style: lower-alpha;
+  margin: 0em 2em;
 }
 .rendered_html ol ol ol ol {
   list-style: lower-roman;
+  margin: 0em 2em;
 }
 .rendered_html ol ol ol ol ol {
   list-style: decimal;
+  margin: 0em 2em;
 }
 .rendered_html * + ul {
   margin-top: 1em;
@@ -11205,23 +10249,14 @@ div.output_unrecognized a:hover {
 }
 .rendered_html pre {
   margin: 1em 2em;
-  padding: 0px;
-  background-color: #fff;
-}
-.rendered_html code {
-  background-color: #eff0f1;
-}
-.rendered_html p code {
-  padding: 1px 5px;
-}
-.rendered_html pre code {
-  background-color: #fff;
 }
 .rendered_html pre,
 .rendered_html code {
   border: 0;
+  background-color: #fff;
   color: #000;
   font-size: 100%;
+  padding: 0px;
 }
 .rendered_html blockquote {
   margin: 1em 2em;
@@ -11229,36 +10264,24 @@ div.output_unrecognized a:hover {
 .rendered_html table {
   margin-left: auto;
   margin-right: auto;
-  border: none;
+  border: 1px solid black;
   border-collapse: collapse;
-  border-spacing: 0;
-  color: black;
-  font-size: 12px;
-  table-layout: fixed;
-}
-.rendered_html thead {
-  border-bottom: 1px solid black;
-  vertical-align: bottom;
 }
 .rendered_html tr,
 .rendered_html th,
 .rendered_html td {
-  text-align: right;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 1em 2em;
+}
+.rendered_html td,
+.rendered_html th {
+  text-align: left;
   vertical-align: middle;
-  padding: 0.5em 0.5em;
-  line-height: normal;
-  white-space: normal;
-  max-width: none;
-  border: none;
+  padding: 4px;
 }
 .rendered_html th {
   font-weight: bold;
-}
-.rendered_html tbody tr:nth-child(odd) {
-  background: #f5f5f5;
-}
-.rendered_html tbody tr:hover {
-  background: rgba(66, 165, 245, 0.2);
 }
 .rendered_html * + table {
   margin-top: 1em;
@@ -11285,15 +10308,6 @@ div.output_unrecognized a:hover {
 .rendered_html img.unconfined,
 .rendered_html svg.unconfined {
   max-width: none;
-}
-.rendered_html .alert {
-  margin-bottom: initial;
-}
-.rendered_html * + .alert {
-  margin-top: 1em;
-}
-[dir="rtl"] .rendered_html p {
-  text-align: right;
 }
 div.text_cell {
   /* Old browsers */
@@ -11348,17 +10362,8 @@ h6:hover .anchor-link {
   overflow-x: auto;
   overflow-y: hidden;
 }
-.text_cell.rendered .rendered_html tr,
-.text_cell.rendered .rendered_html th,
-.text_cell.rendered .rendered_html td {
-  max-width: none;
-}
 .text_cell.unrendered .text_cell_render {
   display: none;
-}
-.text_cell .dropzone .input_area {
-  border: 2px dashed #bababa;
-  margin: -1px;
 }
 .cm-header-1,
 .cm-header-2,
@@ -11495,28 +10500,6 @@ kbd {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.jupyter-keybindings {
-  padding: 1px;
-  line-height: 24px;
-  border-bottom: 1px solid gray;
-}
-.jupyter-keybindings input {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-.jupyter-keybindings i {
-  padding: 6px;
-}
-.well code {
-  background-color: #ffffff;
-  border-color: #ababab;
-  border-width: 1px;
-  border-style: solid;
-  padding: 2px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
 /* CSS for the cell toolbar */
 .celltoolbar {
   border: thin solid #CFCFCF;
@@ -11649,152 +10632,6 @@ select[multiple].celltoolbar select {
   margin-left: 5px;
   margin-right: 5px;
 }
-.tags_button_container {
-  width: 100%;
-  display: flex;
-}
-.tag-container {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  overflow: hidden;
-  position: relative;
-}
-.tag-container > * {
-  margin: 0 4px;
-}
-.remove-tag-btn {
-  margin-left: 4px;
-}
-.tags-input {
-  display: flex;
-}
-.cell-tag:last-child:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 40px;
-  height: 100%;
-  /* Fade to background color of cell toolbar */
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), #EEE);
-}
-.tags-input > * {
-  margin-left: 4px;
-}
-.cell-tag,
-.tags-input input,
-.tags-input button {
-  display: block;
-  width: 100%;
-  height: 32px;
-  padding: 6px 12px;
-  font-size: 13px;
-  line-height: 1.42857143;
-  color: #555555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  height: 30px;
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 1px;
-  box-shadow: none;
-  width: inherit;
-  font-size: inherit;
-  height: 22px;
-  line-height: 22px;
-  padding: 0px 4px;
-  display: inline-block;
-}
-.cell-tag:focus,
-.tags-input input:focus,
-.tags-input button:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-.cell-tag::-moz-placeholder,
-.tags-input input::-moz-placeholder,
-.tags-input button::-moz-placeholder {
-  color: #999;
-  opacity: 1;
-}
-.cell-tag:-ms-input-placeholder,
-.tags-input input:-ms-input-placeholder,
-.tags-input button:-ms-input-placeholder {
-  color: #999;
-}
-.cell-tag::-webkit-input-placeholder,
-.tags-input input::-webkit-input-placeholder,
-.tags-input button::-webkit-input-placeholder {
-  color: #999;
-}
-.cell-tag::-ms-expand,
-.tags-input input::-ms-expand,
-.tags-input button::-ms-expand {
-  border: 0;
-  background-color: transparent;
-}
-.cell-tag[disabled],
-.tags-input input[disabled],
-.tags-input button[disabled],
-.cell-tag[readonly],
-.tags-input input[readonly],
-.tags-input button[readonly],
-fieldset[disabled] .cell-tag,
-fieldset[disabled] .tags-input input,
-fieldset[disabled] .tags-input button {
-  background-color: #eeeeee;
-  opacity: 1;
-}
-.cell-tag[disabled],
-.tags-input input[disabled],
-.tags-input button[disabled],
-fieldset[disabled] .cell-tag,
-fieldset[disabled] .tags-input input,
-fieldset[disabled] .tags-input button {
-  cursor: not-allowed;
-}
-textarea.cell-tag,
-textarea.tags-input input,
-textarea.tags-input button {
-  height: auto;
-}
-select.cell-tag,
-select.tags-input input,
-select.tags-input button {
-  height: 30px;
-  line-height: 30px;
-}
-textarea.cell-tag,
-textarea.tags-input input,
-textarea.tags-input button,
-select[multiple].cell-tag,
-select[multiple].tags-input input,
-select[multiple].tags-input button {
-  height: auto;
-}
-.cell-tag,
-.tags-input button {
-  padding: 0px 4px;
-}
-.cell-tag {
-  background-color: #fff;
-  white-space: nowrap;
-}
-.tags-input input[type=text]:focus {
-  outline: none;
-  box-shadow: none;
-  border-color: #ccc;
-}
 .completions {
   position: absolute;
   z-index: 110;
@@ -11820,28 +10657,16 @@ select[multiple].tags-input button {
 .completions select option.context {
   color: #286090;
 }
+#kernel_logo_widget {
+  float: right !important;
+  float: right;
+}
 #kernel_logo_widget .current_kernel_logo {
   display: none;
   margin-top: -1px;
   margin-bottom: -1px;
   width: 32px;
   height: 32px;
-}
-[dir="rtl"] #kernel_logo_widget {
-  float: left !important;
-  float: left;
-}
-.modal .modal-body .move-path {
-  display: flex;
-  flex-direction: row;
-  justify-content: space;
-  align-items: center;
-}
-.modal .modal-body .move-path .server-root {
-  padding-right: 20px;
-}
-.modal .modal-body .move-path .path-input {
-  flex: 1;
 }
 #menubar {
   box-sizing: border-box;
@@ -11863,41 +10688,11 @@ select[multiple].tags-input button {
 #menubar .navbar-collapse {
   clear: left;
 }
-[dir="rtl"] #menubar .navbar-toggle {
-  float: right;
-}
-[dir="rtl"] #menubar .navbar-collapse {
-  clear: right;
-}
-[dir="rtl"] #menubar .navbar-nav {
-  float: right;
-}
-[dir="rtl"] #menubar .nav {
-  padding-right: 0px;
-}
-[dir="rtl"] #menubar .navbar-nav > li {
-  float: right;
-}
-[dir="rtl"] #menubar .navbar-right {
-  float: left !important;
-}
-[dir="rtl"] ul.dropdown-menu {
-  text-align: right;
-  left: auto;
-}
-[dir="rtl"] ul#new-menu.dropdown-menu {
-  right: auto;
-  left: 0;
-}
 .nav-wrapper {
   border-bottom: 1px solid #e7e7e7;
 }
 i.menu-icon {
   padding-top: 4px;
-}
-[dir="rtl"] i.menu-icon.pull-right {
-  float: left !important;
-  float: left;
 }
 ul#help_menu li a {
   overflow: hidden;
@@ -11905,17 +10700,6 @@ ul#help_menu li a {
 }
 ul#help_menu li a i {
   margin-right: -1.2em;
-}
-[dir="rtl"] ul#help_menu li a {
-  padding-left: 2.2em;
-}
-[dir="rtl"] ul#help_menu li a i {
-  margin-right: 0;
-  margin-left: -1.2em;
-}
-[dir="rtl"] ul#help_menu li a i.pull-right {
-  float: left !important;
-  float: left;
 }
 .dropdown-submenu {
   position: relative;
@@ -11925,10 +10709,6 @@ ul#help_menu li a i {
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
-}
-[dir="rtl"] .dropdown-submenu > .dropdown-menu {
-  right: 100%;
-  margin-right: -1px;
 }
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
@@ -11947,23 +10727,11 @@ ul#help_menu li a i {
   margin-top: 2px;
   margin-right: -10px;
 }
-.dropdown-submenu > a:after.fa-pull-left {
-  margin-right: .3em;
-}
-.dropdown-submenu > a:after.fa-pull-right {
-  margin-left: .3em;
-}
 .dropdown-submenu > a:after.pull-left {
   margin-right: .3em;
 }
 .dropdown-submenu > a:after.pull-right {
   margin-left: .3em;
-}
-[dir="rtl"] .dropdown-submenu > a:after {
-  float: left;
-  content: "\f0d9";
-  margin-right: 0;
-  margin-left: -10px;
 }
 .dropdown-submenu:hover > a:after {
   color: #262626;
@@ -11980,10 +10748,6 @@ ul#help_menu li a i {
   float: right;
   z-index: 10;
 }
-[dir="rtl"] #notification_area {
-  float: left !important;
-  float: left;
-}
 .indicator_area {
   float: right !important;
   float: right;
@@ -11994,10 +10758,6 @@ ul#help_menu li a i {
   z-index: 10;
   text-align: center;
   width: auto;
-}
-[dir="rtl"] .indicator_area {
-  float: left !important;
-  float: left;
 }
 #kernel_indicator {
   float: right !important;
@@ -12015,12 +10775,6 @@ ul#help_menu li a i {
   padding-left: 5px;
   padding-right: 5px;
 }
-[dir="rtl"] #kernel_indicator {
-  float: left !important;
-  float: left;
-  border-left: 0;
-  border-right: 1px solid;
-}
 #modal_indicator {
   float: right !important;
   float: right;
@@ -12031,10 +10785,6 @@ ul#help_menu li a i {
   z-index: 10;
   text-align: center;
   width: auto;
-}
-[dir="rtl"] #modal_indicator {
-  float: left !important;
-  float: left;
 }
 #readonly-indicator {
   float: right !important;
@@ -12065,12 +10815,6 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f040";
 }
-.edit_mode .modal_indicator:before.fa-pull-left {
-  margin-right: .3em;
-}
-.edit_mode .modal_indicator:before.fa-pull-right {
-  margin-left: .3em;
-}
 .edit_mode .modal_indicator:before.pull-left {
   margin-right: .3em;
 }
@@ -12085,12 +10829,6 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: ' ';
-}
-.command_mode .modal_indicator:before.fa-pull-left {
-  margin-right: .3em;
-}
-.command_mode .modal_indicator:before.fa-pull-right {
-  margin-left: .3em;
 }
 .command_mode .modal_indicator:before.pull-left {
   margin-right: .3em;
@@ -12107,12 +10845,6 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f10c";
 }
-.kernel_idle_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.kernel_idle_icon:before.fa-pull-right {
-  margin-left: .3em;
-}
 .kernel_idle_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -12127,12 +10859,6 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f111";
-}
-.kernel_busy_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.kernel_busy_icon:before.fa-pull-right {
-  margin-left: .3em;
 }
 .kernel_busy_icon:before.pull-left {
   margin-right: .3em;
@@ -12149,12 +10875,6 @@ ul#help_menu li a i {
   -moz-osx-font-smoothing: grayscale;
   content: "\f1e2";
 }
-.kernel_dead_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.kernel_dead_icon:before.fa-pull-right {
-  margin-left: .3em;
-}
 .kernel_dead_icon:before.pull-left {
   margin-right: .3em;
 }
@@ -12169,12 +10889,6 @@ ul#help_menu li a i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\f127";
-}
-.kernel_disconnected_icon:before.fa-pull-left {
-  margin-right: .3em;
-}
-.kernel_disconnected_icon:before.fa-pull-right {
-  margin-left: .3em;
 }
 .kernel_disconnected_icon:before.pull-left {
   margin-right: .3em;
@@ -12565,46 +11279,27 @@ div#pager .ui-resizable-handle::after {
   flex: 1;
 }
 span.save_widget {
-  height: 30px;
-  margin-top: 4px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  width: 50%;
-  flex: 1;
+  margin-top: 6px;
 }
 span.save_widget span.filename {
-  height: 100%;
+  height: 1em;
   line-height: 1em;
+  padding: 3px;
   margin-left: 16px;
   border: none;
   font-size: 146.5%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   border-radius: 2px;
 }
 span.save_widget span.filename:hover {
   background-color: #e6e6e6;
 }
-[dir="rtl"] span.save_widget.pull-left {
-  float: right !important;
-  float: right;
-}
-[dir="rtl"] span.save_widget span.filename {
-  margin-left: 0;
-  margin-right: 16px;
-}
 span.checkpoint_status,
 span.autosave_status {
   font-size: small;
-  white-space: nowrap;
-  padding: 0 5px;
 }
 @media (max-width: 767px) {
   span.save_widget {
     font-size: small;
-    padding: 0 0 0 5px;
   }
   span.checkpoint_status,
   span.autosave_status {
@@ -12648,9 +11343,6 @@ span.autosave_status {
   margin-top: 0px;
   margin-left: 5px;
 }
-.toolbar-btn-label {
-  margin-left: 6px;
-}
 #maintoolbar {
   margin-bottom: -3px;
   margin-top: -8px;
@@ -12670,10 +11362,6 @@ span.autosave_status {
 }
 .select-xs {
   height: 24px;
-}
-[dir="rtl"] .btn-group > .btn,
-.btn-group-vertical > .btn {
-  float: right;
 }
 .pulse,
 .dropdown-menu > li > a.pulse,
@@ -12824,10 +11512,6 @@ ul.typeahead-list i {
   margin-left: -10px;
   width: 18px;
 }
-[dir="rtl"] ul.typeahead-list i {
-  margin-left: 0;
-  margin-right: -10px;
-}
 ul.typeahead-list {
   max-height: 80vh;
   overflow: auto;
@@ -12836,13 +11520,6 @@ ul.typeahead-list > li > a {
   /** Firefox bug **/
   /* see https://github.com/jupyter/notebook/issues/559 */
   white-space: normal;
-}
-ul.typeahead-list  > li > a.pull-right {
-  float: left !important;
-  float: left;
-}
-[dir="rtl"] .typeahead-list {
-  text-align: right;
 }
 .cmd-palette .modal-body {
   padding: 7px;
@@ -12854,19 +11531,10 @@ ul.typeahead-list  > li > a.pull-right {
   outline: none;
 }
 .no-shortcut {
-  min-width: 20px;
-  color: transparent;
-}
-[dir="rtl"] .no-shortcut.pull-right {
-  float: left !important;
-  float: left;
-}
-[dir="rtl"] .command-shortcut.pull-right {
-  float: left !important;
-  float: left;
+  display: none;
 }
 .command-shortcut:before {
-  content: "(command mode)";
+  content: "(command)";
   padding-right: 3px;
   color: #777777;
 }
@@ -12875,10 +11543,6 @@ ul.typeahead-list  > li > a.pull-right {
   padding-right: 3px;
   color: #777777;
 }
-[dir="rtl"] .edit-shortcut.pull-right {
-  float: left !important;
-  float: left;
-}
 #find-and-replace #replace-preview .match,
 #find-and-replace #replace-preview .insert {
   background-color: #BBDEFB;
@@ -12886,12 +11550,6 @@ ul.typeahead-list  > li > a.pull-right {
   border-style: solid;
   border-width: 1px;
   border-radius: 0px;
-}
-[dir="ltr"] #find-and-replace .input-group-btn + .form-control {
-  border-left: none;
-}
-[dir="rtl"] #find-and-replace .input-group-btn + .form-control {
-  border-right: none;
 }
 #find-and-replace #replace-preview .replace .match {
   background-color: #FFCDD2;
@@ -13114,7 +11772,8 @@ div#notebook {
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Developing-an-AI-application">Developing an AI application<a class="anchor-link" href="#Developing-an-AI-application">&#182;</a></h1><p>Going forward, AI algorithms will be incorporated into more and more everyday applications. For example, you might want to include an image classifier in a smart phone app. To do this, you'd use a deep learning model trained on hundreds of thousands of images as part of the overall application architecture. A large part of software development in the future will be using these types of models as common parts of applications.</p>
 <p>In this project, you'll train an image classifier to recognize different species of flowers. You can imagine using something like this in a phone app that tells you the name of the flower your camera is looking at. In practice you'd train this classifier, then export it for use in your application. We'll be using <a href="http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html">this dataset</a> of 102 flower categories, you can see a few examples below.</p>
@@ -13135,7 +11794,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Imports here</span>
@@ -13152,13 +11811,14 @@ div#notebook {
 <span class="kn">from</span> <span class="nn">workspace_utils</span> <span class="k">import</span> <span class="n">active_session</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Load-the-data">Load the data<a class="anchor-link" href="#Load-the-data">&#182;</a></h2><p>Here you'll use <code>torchvision</code> to load the data (<a href="http://pytorch.org/docs/0.3.0/torchvision/index.html">documentation</a>). The data should be included alongside this notebook, otherwise you can <a href="https://s3.amazonaws.com/content.udacity-data.com/nd089/flower_data.tar.gz">download it here</a>. The dataset is split into three parts, training, validation, and testing. For the training, you'll want to apply transformations such as random scaling, cropping, and flipping. This will help the network generalize leading to better performance. You'll also need to make sure the input data is resized to 224x224 pixels as required by the pre-trained networks.</p>
 <p>The validation and testing sets are used to measure the model's performance on data it hasn't seen yet. For this you don't want any scaling or rotation transformations, but you'll need to resize then crop the images to the appropriate size.</p>
@@ -13179,7 +11839,7 @@ div#notebook {
 <span class="n">test_dir</span> <span class="o">=</span> <span class="n">data_dir</span> <span class="o">+</span> <span class="s1">&#39;/test&#39;</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13211,13 +11871,14 @@ div#notebook {
 <span class="n">test_loader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">test_data</span><span class="p">,</span>  <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Label-mapping">Label mapping<a class="anchor-link" href="#Label-mapping">&#182;</a></h3><p>You'll also need to load in a mapping from category label to category name. You can find this in the file <code>cat_to_name.json</code>. It's a JSON object which you can read in with the <a href="https://docs.python.org/2/library/json.html"><code>json</code> module</a>. This will give you a dictionary mapping the integer encoded categories to the actual names of the flowers.</p>
 
@@ -13226,7 +11887,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import mapping of category label to category name</span>
@@ -13238,7 +11899,7 @@ div#notebook {
 <span class="nb">len</span><span class="p">(</span><span class="n">cat_to_name</span><span class="p">)</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13248,7 +11909,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13264,7 +11925,8 @@ div#notebook {
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Building-and-training-the-classifier">Building and training the classifier<a class="anchor-link" href="#Building-and-training-the-classifier">&#182;</a></h1><p>Now that the data is ready, it's time to build and train the classifier. As usual, you should use one of the pretrained models from <code>torchvision.models</code> to get the image features. Build and train a new feed-forward classifier using those features.</p>
 <p>We're going to leave this part up to you. Refer to <a href="https://review.udacity.com/#!/rubrics/1663/view">the rubric</a> for guidance on successfully completing this section. Things you'll need to do:</p>
@@ -13292,11 +11954,11 @@ div#notebook {
 <span class="n">model</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">vgg13</span><span class="p">(</span><span class="n">pretrained</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1">#  define adjusting classifier</span>
-<span class="n">classifier_dict</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([(</span><span class="s2">&quot;fc1&quot;</span><span class="p">,</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">25088</span><span class="p">,</span><span class="mi">4096</span><span class="p">)),</span> <span class="p">(</span><span class="s2">&quot;relu1&quot;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">()),</span> <span class="p">(</span><span class="s2">&quot;fc2&quot;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">4096</span><span class="p">,</span><span class="mi">102</span><span class="p">)),</span> <span class="p">(</span><span class="s2">&quot;p_out&quot;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">LogSoftmax</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">))])</span>
+<span class="n">classifier_dict</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">([(</span><span class="s2">&quot;fc1&quot;</span><span class="p">,</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">25088</span><span class="p">,</span><span class="mi">4096</span><span class="p">)),</span> <span class="p">(</span><span class="s2">&quot;relu1&quot;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">()),(</span><span class="s2">&quot;dropout1&quot;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">))</span> <span class="p">,</span> <span class="p">(</span><span class="s2">&quot;fc2&quot;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">4096</span><span class="p">,</span><span class="mi">102</span><span class="p">)),</span> <span class="p">(</span><span class="s2">&quot;p_out&quot;</span><span class="p">,</span> <span class="n">nn</span><span class="o">.</span><span class="n">LogSoftmax</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">))])</span>
 <span class="n">model</span><span class="o">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">classifier_dict</span><span class="p">)</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13309,7 +11971,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13319,7 +11981,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+<div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -13354,6 +12016,7 @@ div#notebook {
   (classifier): Sequential(
     (fc1): Linear(in_features=25088, out_features=4096, bias=True)
     (relu1): ReLU()
+    (dropout1): Dropout(p=0.2)
     (fc2): Linear(in_features=4096, out_features=102, bias=True)
     (p_out): LogSoftmax()
   )
@@ -13381,7 +12044,7 @@ div#notebook {
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">classifier</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.002</span><span class="p">)</span> <span class="c1">###0.002とか？？？？？</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13453,7 +12116,7 @@ div#notebook {
             <span class="n">model</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13463,51 +12126,51 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+<div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>cuda
 
 1th epoch
-  training   : loss = 4.165889739990234, accuracy = 0.12789634146341464
-  validation : loss = 3.4655678272247314, accuracy = 0.2919337611932021
+  training   : loss = 4.172964096069336, accuracy = 0.13516260167447533
+  validation : loss = 3.446113348007202, accuracy = 0.2880608978179785
 
 2th epoch
-  training   : loss = 3.301302909851074, accuracy = 0.34466463414634146
-  validation : loss = 2.462740421295166, accuracy = 0.5006677347880143
+  training   : loss = 3.3080573081970215, accuracy = 0.33434959352016447
+  validation : loss = 2.43381929397583, accuracy = 0.5393963685402503
 
 3th epoch
-  training   : loss = 2.5665369033813477, accuracy = 0.5020325204221213
-  validation : loss = 1.76771080493927, accuracy = 0.6268696578649374
+  training   : loss = 2.5916595458984375, accuracy = 0.48871951219512194
+  validation : loss = 1.770577311515808, accuracy = 0.6475694454633273
 
 4th epoch
-  training   : loss = 2.060946464538574, accuracy = 0.599390243902439
-  validation : loss = 1.3499845266342163, accuracy = 0.7382478622289804
+  training   : loss = 2.092798948287964, accuracy = 0.588719512195122
+  validation : loss = 1.3381638526916504, accuracy = 0.7227564110205724
 
 5th epoch
-  training   : loss = 1.7069936990737915, accuracy = 0.6692581301782189
-  validation : loss = 1.0831029415130615, accuracy = 0.7931356842701252
+  training   : loss = 1.7369389533996582, accuracy = 0.651219512195122
+  validation : loss = 1.0677770376205444, accuracy = 0.7867254270957067
 
 6th epoch
-  training   : loss = 1.4719988107681274, accuracy = 0.7121951219512195
-  validation : loss = 0.8966135382652283, accuracy = 0.8187767083828266
+  training   : loss = 1.4911210536956787, accuracy = 0.7002540649437323
+  validation : loss = 0.8906591534614563, accuracy = 0.8115651699212881
 
 7th epoch
-  training   : loss = 1.294437050819397, accuracy = 0.7497967478705616
-  validation : loss = 0.7764990329742432, accuracy = 0.8385416659025046
+  training   : loss = 1.3225376605987549, accuracy = 0.732571138114464
+  validation : loss = 0.7506465911865234, accuracy = 0.8505608966717353
 
 8th epoch
-  training   : loss = 1.1592744588851929, accuracy = 0.7715447155440726
-  validation : loss = 0.673126757144928, accuracy = 0.864716880596601
+  training   : loss = 1.2068233489990234, accuracy = 0.7514735771388542
+  validation : loss = 0.6814046502113342, accuracy = 0.8707264959812164
 
 9th epoch
-  training   : loss = 1.0506254434585571, accuracy = 0.7861280487804878
-  validation : loss = 0.6050865650177002, accuracy = 0.8815438036735241
+  training   : loss = 1.1148872375488281, accuracy = 0.7641260161632445
+  validation : loss = 0.6050907373428345, accuracy = 0.8794070505178891
 
 10th epoch
-  training   : loss = 0.9767513871192932, accuracy = 0.7974085365853658
-  validation : loss = 0.5512411594390869, accuracy = 0.8887553421350626
+  training   : loss = 1.0196739435195923, accuracy = 0.7857723576266591
+  validation : loss = 0.557325005531311, accuracy = 0.8827457267504472
 </pre>
 </div>
 </div>
@@ -13517,7 +12180,8 @@ div#notebook {
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Testing-your-network">Testing your network<a class="anchor-link" href="#Testing-your-network">&#182;</a></h2><p>It's good practice to test your trained network on test data, images the network has never seen either in training or validation. This will give you a good estimate for the model's performance on completely new images. Run the test images through the network and measure the accuracy, the same way you did validation. You should be able to reach around 70% accuracy on the test set if the model has been trained well.</p>
 
@@ -13550,7 +12214,7 @@ div#notebook {
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the accuracy of test set = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">accuracy_test_total</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">test_loader</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13560,12 +12224,12 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+<div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>the loss of test set = 0.03017856553196907
-the accuracy of test set = 85.60855102539062
+<pre>the loss of test set = 0.011794616468250751
+the accuracy of test set = 85.97545623779297
 </pre>
 </div>
 </div>
@@ -13575,7 +12239,8 @@ the accuracy of test set = 85.60855102539062
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Save-the-checkpoint">Save the checkpoint<a class="anchor-link" href="#Save-the-checkpoint">&#182;</a></h2><p>Now that your network is trained, save the model so you can load it later for making predictions. You probably want to save other things such as the mapping of classes to indices which you get from one of the image datasets: <code>image_datasets['train'].class_to_idx</code>. You can attach this to the model as an attribute which makes inference easier later on.</p>
 <p><code>model.class_to_idx = image_datasets['train'].class_to_idx</code></p>
@@ -13593,7 +12258,7 @@ the accuracy of test set = 85.60855102539062
 
 <span class="c1"># make the checpoint dictionary</span>
 <span class="n">checkpoint</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;epochs&#39;</span> <span class="p">:</span> <span class="n">epochs</span><span class="p">,</span>
-                <span class="s1">&#39;arch&#39;</span> <span class="p">:</span> <span class="s1">&#39;vgg19&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;arch&#39;</span> <span class="p">:</span> <span class="s1">&#39;vgg13&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;classifier_dict&#39;</span> <span class="p">:</span> <span class="n">classifier_dict</span><span class="p">,</span>
                 <span class="s1">&#39;cumulative_epochs&#39;</span> <span class="p">:</span> <span class="n">epochs</span><span class="p">,</span>
                 <span class="s1">&#39;state_dict&#39;</span> <span class="p">:</span> <span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span>
@@ -13604,13 +12269,14 @@ the accuracy of test set = 85.60855102539062
 <span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">checkpoint</span><span class="p">,</span> <span class="s2">&quot;checkpoint&quot;</span><span class="p">)</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Loading-the-checkpoint">Loading the checkpoint<a class="anchor-link" href="#Loading-the-checkpoint">&#182;</a></h2><p>At this point it's good to write a function that can load a checkpoint and rebuild the model. That way you can come back to this project and keep working on it without having to retrain the network.</p>
 
@@ -13619,7 +12285,7 @@ the accuracy of test set = 85.60855102539062
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## TODO: Write a function that loads a checkpoint and rebuilds the model</span>
@@ -13635,27 +12301,28 @@ the accuracy of test set = 85.60855102539062
     <span class="k">return</span> <span class="n">model</span><span class="p">,</span> <span class="n">epochs</span><span class="p">,</span> <span class="n">class_to_idx</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load the file and recreate the model</span>
 <span class="n">model</span><span class="p">,</span> <span class="n">c_epochs</span><span class="p">,</span> <span class="n">class_to_idx</span> <span class="o">=</span> <span class="n">load_checkpoint</span><span class="p">(</span><span class="s2">&quot;checkpoint&quot;</span><span class="p">)</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Inference-for-classification">Inference for classification<a class="anchor-link" href="#Inference-for-classification">&#182;</a></h1><p>Now you'll write a function to use a trained network for inference. That is, you'll pass an image into the network and predict the class of the flower in the image. Write a function called <code>predict</code> that takes an image and a model, then returns the top $K$ most likely classes along with the probabilities. It should look like</p>
 <div class="highlight"><pre><span></span><span class="n">probs</span><span class="p">,</span> <span class="n">classes</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">image_path</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
@@ -13676,7 +12343,7 @@ the accuracy of test set = 85.60855102539062
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
@@ -13718,13 +12385,14 @@ the accuracy of test set = 85.60855102539062
     <span class="k">return</span> <span class="n">np_image4</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To check your work, the function below converts a PyTorch tensor and displays it in the notebook. If your <code>process_image</code> function works, running the output through this function should return the original image (except for the cropped out portions).</p>
 
@@ -13733,7 +12401,7 @@ the accuracy of test set = 85.60855102539062
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
@@ -13757,14 +12425,14 @@ the accuracy of test set = 85.60855102539062
     <span class="k">return</span> <span class="n">ax</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># test if the process_image() works fine</span>
@@ -13773,7 +12441,7 @@ the accuracy of test set = 85.60855102539062
 <span class="n">imshow</span><span class="p">(</span><span class="n">processed_image</span><span class="p">)</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13783,20 +12451,20 @@ the accuracy of test set = 85.60855102539062
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+<div class="prompt output_prompt">Out[15]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f9692093940&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x7f66fa96a208&gt;</pre>
 </div>
 
 </div>
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+<div class="prompt"></div>
 
 
 
@@ -13814,7 +12482,8 @@ the accuracy of test set = 85.60855102539062
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Class-Prediction">Class Prediction<a class="anchor-link" href="#Class-Prediction">&#182;</a></h2><p>Once you can get images in the correct format, it's time to write a function for making predictions with your model. A common practice is to predict the top 5 or so (usually called top-$K$) most probable classes. You'll want to calculate the class probabilities then find the $K$ largest values.</p>
 <p>To get the top $K$ largest values in a tensor use <a href="http://pytorch.org/docs/master/torch.html#torch.topk"><code>x.topk(k)</code></a>. This method returns both the highest <code>k</code> probabilities and the indices of those probabilities corresponding to the classes. You need to convert from these indices to the actual class labels using <code>class_to_idx</code> which hopefully you added to the model or from an <code>ImageFolder</code> you used to load the data (<a href="#Save-the-checkpoint">see here</a>). Make sure to invert the dictionary so you get a mapping from index to class as well.</p>
@@ -13831,7 +12500,7 @@ the accuracy of test set = 85.60855102539062
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns the top few predictions using the parameter models and filepath</span>
@@ -13855,13 +12524,14 @@ the accuracy of test set = 85.60855102539062
     <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">top_logp</span><span class="p">),</span> <span class="n">top_class</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
+</div>
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Sanity-Checking">Sanity Checking<a class="anchor-link" href="#Sanity-Checking">&#182;</a></h2><p>Now that you can use a trained model for predictions, check to make sure it makes sense. Even if the testing accuracy is high, it's always good to check that there aren't obvious bugs. Use <code>matplotlib</code> to plot the probabilities for the top 5 classes as a bar graph, along with the input image. It should look like this:</p>
 <p><img src='assets/inference_example.png' width=300px></p>
@@ -13872,7 +12542,7 @@ the accuracy of test set = 85.60855102539062
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Display an image along with the top 5 classes</span>
@@ -13893,14 +12563,14 @@ the accuracy of test set = 85.60855102539062
 <span class="n">tops</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">tops_index</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># display an example test image</span>
@@ -13909,7 +12579,7 @@ the accuracy of test set = 85.60855102539062
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">image</span><span class="p">));</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13919,7 +12589,7 @@ the accuracy of test set = 85.60855102539062
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+<div class="prompt"></div>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
@@ -13930,7 +12600,7 @@ the accuracy of test set = 85.60855102539062
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+<div class="prompt"></div>
 
 
 
@@ -13949,7 +12619,7 @@ the accuracy of test set = 85.60855102539062
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot the prediction of an example test image</span>
@@ -13958,7 +12628,7 @@ the accuracy of test set = 85.60855102539062
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">20</span><span class="p">);</span>
 </pre></div>
 
-    </div>
+</div>
 </div>
 </div>
 
@@ -13968,13 +12638,13 @@ the accuracy of test set = 85.60855102539062
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+<div class="prompt"></div>
 
 
 
 
 <div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
+<img src="data:image/png;base64,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
 "
 >
 </div>
