@@ -1,6 +1,6 @@
 # Project Overview
 
-This is a 1st project of Udacity's Data Scientist Nanodegree program. In this project, I first developed code in Jupyter Notebook for an image classifier built with PyTorch following the instruction of Udacity. I converted it into a command line application which enables us to predict the type of flower from the image file.
+This is a  project of Udacity's Data Scientist Nanodegree program. In this project, I first developed code in Jupyter Notebook for an image classifier built with PyTorch following the instruction of Udacity. I converted it into a command line application which enables us to predict the type of flower from the image file.
 
 
 # Files
